@@ -1,0 +1,36 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore IDE settings
+.idea/
+
+# Ignore virtual environments
+venv/
+env/
+.env/
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.so
+*.egg-info/
+dist/
+build/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore coverage reports
+coverage.xml
+*.cover
+*.py,cover
+
+# Ignore other temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
