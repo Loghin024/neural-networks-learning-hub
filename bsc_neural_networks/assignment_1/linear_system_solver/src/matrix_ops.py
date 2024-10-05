@@ -1,5 +1,11 @@
 #src/matrix_ops.py
 
+def determinant_2x2(matrix):
+    """
+    Calculate the determinant of a 2x2 matrix
+    """
+    return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0]
+
 def determinant_3x3(matrix):
     """
     Calculate the determinant of a 3x3 matrix
