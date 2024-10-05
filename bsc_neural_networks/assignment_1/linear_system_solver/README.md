@@ -7,23 +7,32 @@
 - experiment with other values for the coefficients and free terms
 
 ## Folder Structure
-project_root/ 
-│ ├── data/ # directory for input files 
-│     └── test_input.txt # test input file for parsing equations 
-│ ├── src/ # Source code │ 
-│   ├── init.py # init as a Python module 
-│   ├── parser.py # parse input equations 
-│   ├── matrix_ops.py # code for matrix/vector operations 
-│   ├── cramer.py # code to solve using Cramer’s Rule 
-│   ├── inversion.py # Code to solve using matrix inversion 
-│ ├── tests/ # Unit tests 
-│   ├── test_parser.py unittests for the parser  
-│   ├── test_matrix_ops.py # Unit tests for matrix operations 
-│   ├── test_cramer.py # Unit tests for Cramer’s Rule 
-│   └── test_inversion.py # Unit tests for matrix inversion 
-├── main.py # Main script to run the assignment  
-├── .gitignore # Git ignore file  
-└── README.md # Project documentation
+```
+project_root/
+│
+├── data/                  # Directory for input files
+│   └── test_input.txt     # Test input file for parsing equations
+│
+├── src/                   # Source code
+│   ├── __init__.py        # Initialize as a Python module
+│   ├── parser.py          # Parse input equations
+│   ├── matrix_ops.py      # Code for matrix/vector operations
+│   ├── cramer.py          # Code to solve using Cramer’s Rule
+│   ├── inversion.py       # Code to solve using matrix inversion
+│   └── utils.py           # Helper functions
+│
+├── tests/                 # Unit tests
+│   ├── test_parser.py     # Unit tests for the parser
+│   ├── test_matrix_ops.py # Unit tests for matrix operations
+│   ├── test_cramer.py     # Unit tests for Cramer’s Rule
+│   └── test_inversion.py  # Unit tests for matrix inversion
+│
+├── main.py                # Main script to run the assignment
+│
+├── .gitignore             # Git ignore file
+└── README.md              # Project documentation
+
+```
 
 
 ## Implementation Details
