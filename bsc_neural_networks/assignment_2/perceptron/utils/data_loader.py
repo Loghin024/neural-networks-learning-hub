@@ -1,6 +1,7 @@
 import numpy as np
 from torchvision.datasets import MNIST
 
+
 def download_mnist(is_train: bool):
     """
     Download MNIST dataset
@@ -8,9 +9,9 @@ def download_mnist(is_train: bool):
     :return: data, labels
     """
     dataset = MNIST(root='./data',
-                transform=lambda x: np.array(x).flatten(),
-                download=True,
-                train=is_train)
+                    transform=lambda x: np.array(x).flatten(),
+                    download=True,
+                    train=is_train)
 
     mnist_data = []
     mnist_labels = []
@@ -20,6 +21,7 @@ def download_mnist(is_train: bool):
 
     return mnist_data, mnist_labels
 
+
 def encode_one_hot(labels, num_classes):
     """
     One-hot encode labels
@@ -28,6 +30,7 @@ def encode_one_hot(labels, num_classes):
     :return:  one-hot encoded labels
     """
     return np.eye(num_classes)[labels]
+
 
 def normalize_pixel(pixel):
     """
