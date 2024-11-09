@@ -1,0 +1,7 @@
+# configuration parameters
+INPUT_SIZE = 784
+HIDDEN_LAYERS = [100, 50]
+OUTPUT_SIZE = 10
+LEARNING_RATE = 0.01
+EPOCHS = 10
+BATCH_SIZE = 32
