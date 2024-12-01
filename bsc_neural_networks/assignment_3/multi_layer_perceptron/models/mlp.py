@@ -69,7 +69,7 @@ class MLP:
         d_weights[-1] = self.activations[-2].T @ delta / m
         d_biases[-1] = np.sum(delta, axis=0, keepdims=True) / m
 
-        # backpropagate through hidden layers
+        # backpropagation through hidden layers
         for i in reversed(range(self.num_layers - 1)):
             delta = (delta @ self.weights[i + 1].T) * self.activation_derivatives[i](self.z_values[i])
             d_weights[i] = self.activations[i].T @ delta / m

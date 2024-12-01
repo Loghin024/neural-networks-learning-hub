@@ -47,7 +47,7 @@ def main():
     x_train, y_train, x_test, y_test = preprocess_data()
 
     layer_sizes = [INPUT_SIZE] + HIDDEN_LAYERS + [OUTPUT_SIZE]
-    activation_functions = ["relu", "relu"]
+    activation_functions = ["relu"]
 
     model = MLP(layer_sizes, activation_functions)
     model.train(x_train, y_train, EPOCHS, BATCH_SIZE)
